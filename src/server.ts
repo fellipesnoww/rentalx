@@ -1,6 +1,10 @@
-import express from "express";
+import express, { json } from "express";
+import {categoriesRoutes} from './routes/categories.routes';
 
 const app = express();
+
+app.use(json());
+app.use(categoriesRoutes);
 
 app.get('/', (request, response) =>  {
     return response.json({message: "Hello World!"});
