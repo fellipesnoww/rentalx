@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 
-import { SpecificationsRepository } from "../../repositories/SpecificationsRepository";
+import { SpecificationsRepository } from "../../repositories/implementations/SpecificationsRepository";
 import { ListSpecificationsUseCase } from "./ListSpecificationsUseCase";
 
 const specificationRepository = SpecificationsRepository.getInstance();

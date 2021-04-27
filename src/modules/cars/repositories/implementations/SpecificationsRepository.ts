@@ -1,8 +1,8 @@
-import { Specification } from "../model/Specification";
+import { Specification } from "../../model/Specification";
 import {
   ISpecificationsRepository,
   ICreateSpecificationDTO,
-} from "./ISpecificationsRepository";
+} from "../ISpecificationsRepository";
 
 class SpecificationsRepository implements ISpecificationsRepository {
   private specifications: Specification[];
@@ -29,7 +29,7 @@ class SpecificationsRepository implements ISpecificationsRepository {
     return specification;
   }
 
-  list(): import("../model/Specification").Specification[] {
+  list(): import("../../model/Specification").Specification[] {
     return this.specifications;
   }
 
